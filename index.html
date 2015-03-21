@@ -3,13 +3,8 @@
 <head>
 	<title>Nanoblog</title>
 	<link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
-	<script src="/js/bootstrap.js" type="text/javascript" charset="utf-8" ></script>
-	<script src="/js/jquery-1.11.2.min.js" type="text/javascript" charset="utf-8" ></script>
-	<script src="/js/bootstrap.js" type="text/javascript" charset="utf-8" ></script>
-</head>
-<body>
+	<!-- this is a navbar -->
 	<nav class="navbar navbar-default" role="navigation">
-		<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
 				<span class="sr-only">Toggle navigation</span>
@@ -35,6 +30,7 @@
 				<li><a href="#">Profile</a></li>
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu <b class="caret"></b></a>
 					<ul class="dropdown-menu" role="menu">
 					            <li><a href="#">Settings</a></li>
 					            <li class="divider"></li>
@@ -44,5 +40,51 @@
 			</ul>
 		</div><!-- /.navbar-collapse -->
 	</nav>
+	<!-- postbox div starts here -->
+
+	<div class="container">
+		<div class="row">
+			<!-- bio -->
+			<div class="col-md-3 text-right">
+				<img src="/img/profile.jpg" alt="profile image" class="img-thumbnail">
+				<div>
+					<p class="lead">
+						Web Deleloper, Programmer, Human
+						<br>
+					</p>
+					<!-- small-stats -->
+					<p>
+						20<em> blogs | </em>10<em> followers | </em>50<em> following </em>
+					</p>
+				</div>
+				<hr>
+
+				<!-- trending -->
+				<h3>Trending</h3>
+				<a href="#">#BootCamp</a><br>
+				<a href="#">#WSDC</a><br>
+				<a href="#">#NITW</a><br>
+				<a href="#">#HTML</a><br>
+				<a href="#">#BootStrap</a><br>
+				<a href="#">#CSS</a><br>
+				<a href="#">#JavaScript</a><br>
+				<a href="#">#PHP</a><br>
+				<a href="#">#Python</a><br>
+				<!-- trending ends -->
+			</div>
+
+
+			<!-- post box -->
+			<div class="col-md-9">
+				<div class="form-group">
+					<textarea class="form-control" rows="2" id="comment"></textarea>
+				</div>
+				<div class="clearfix"></div>
+				<button type="button" class="btn btn-success">post!</button>
+			</div>
+		</div>
+	</div>
+	<script src="/js/jquery-1.11.2.min.js" type="text/javascript" charset="utf-8" ></script>
+	<script src="/js/bootstrap.js" type="text/javascript" charset="utf-8" ></script>
 </body>
 </html>
